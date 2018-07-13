@@ -14,6 +14,7 @@ namespace Web_API.Controllers
         [HttpGet]
         public IActionResult Get()
         {
+            //test
             return new JsonResult(from c in User.Claims select new {c.Type, c.Value});
         }
     }
